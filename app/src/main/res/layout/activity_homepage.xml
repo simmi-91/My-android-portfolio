@@ -14,66 +14,45 @@
         android:id="@+id/textView" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/spotify_streamer"
-        android:id="@+id/button"
+        android:id="@+id/btn_spotify"
+        android:onClick="display_toast"
+        style="@style/button"
         android:layout_below="@+id/textView"
-        android:onClick="sendMsg_spotify"
-        style="@style/button" />
+        android:layout_marginTop="40dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/score_app"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:onClick="sendMsg_score"
+        android:id="@+id/btn_score"
+        android:layout_below="@+id/btn_spotify"
+        android:onClick="display_toast"
         style="@style/button" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/library_app"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
-        android:onClick="sendMsg_library"
+        android:id="@+id/btn_library"
+        android:layout_below="@+id/btn_score"
+        android:onClick="display_toast"
         style="@style/button" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/build_it_bigger"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:onClick="sendMsg_bigger"
+        android:id="@+id/btn_bigger"
+        android:layout_below="@+id/btn_library"
+        android:onClick="display_toast"
         style="@style/button" />
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/bacon_reader"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
-        android:onClick="sendMsg_bacon"
+        android:id="@+id/btn_bacon"
+        android:layout_below="@+id/btn_bigger"
+        android:onClick="display_toast"
         style="@style/button" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/capstone"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button5"
-        android:onClick="sendMsg_capstone"
+        android:id="@+id/btn_capstone"
+        android:layout_below="@+id/btn_bacon"
+        android:onClick="display_toast"
         style="@style/button" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/popup_bottom"
-        android:id="@+id/popup_msg"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>
