@@ -1,5 +1,6 @@
 package com.elinsimenstad.showcaseapp;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
@@ -13,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Homepage extends AppCompatActivity {
+public class Homepage extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
