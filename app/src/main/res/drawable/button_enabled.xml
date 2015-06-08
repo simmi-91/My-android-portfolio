@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
 
-    <solid
-        android:color="#1565C0" />
+    <gradient
+        android:startColor="@color/main_lighter"
+        android:centerColor="@color/main"
+        android:endColor="@color/main_darker"
+        android:angle="-90"/>
     <padding android:left="7dp"
         android:top="10dp"
         android:right="10dp"
@@ -14,7 +17,7 @@
 
     <!--
     <solid
-        android:color="#7eff8003" />
+        android:color="@color/blue_main" />
     <padding android:left="7dp"
         android:top="10dp"
         android:right="10dp"
