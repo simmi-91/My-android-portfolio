@@ -1,15 +1,19 @@
 package com.elinsimenstad.showcaseapp;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -65,6 +69,7 @@ public class Homepage extends Activity {
                         Log.d("Album failure", error.toString());
                     }
                 });
+                setContentView(R.layout.activity_spotify_streamer);
                 break;
             case R.id.btn_score:
                 app_name = getText(R.string.score_app);
@@ -86,7 +91,14 @@ public class Homepage extends Activity {
         Toast toast = Toast.makeText(context,text+app_name,duration);
         toast.show();
     }
+    /*
+    public static class PlaceholderFragment extends Fragment {
+        public  PlaceholderFragment(){
+        }
 
+        public View onCreateView(LayoutInflater inflater, ViewGroup)
+    }
+    */
 
 }
 

@@ -11,4 +11,5 @@
     <string name="bacon_reader">Bacon Reader</string>
     <string name="capstone">Capstone: My App</string>
     <string name="popup_bottom"> </string>
+    <string name="title_activity_spotify_streamer">Spotify Streamer</string>
 </resources>
