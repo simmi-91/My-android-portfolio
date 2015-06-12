@@ -16,14 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".SpotifyStreamer"
-            android:label="@string/title_activity_spotify_streamer"
-            android:parentActivityName=".Homepage" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.elinsimenstad.showcaseapp.Homepage" />
-        </activity>
     </application>
 
 </manifest>
